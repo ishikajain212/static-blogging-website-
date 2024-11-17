@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts - My Static Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Blog</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog-list.html" class="active">Blog</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="blog-list-header">
+            <h1>Explore Our Blog Posts</h1>
+            <p>Discover stories, insights, and knowledge shared by our community</p>
+        </div>
+        
+        <div class="blog-filters">
+            <button class="filter-button active" onclick="filterPosts('all', event)">All</button>
+            <button class="filter-button" onclick="filterPosts('technology', event)">Technology</button>
+            <button class="filter-button" onclick="filterPosts('travel', event)">Travel</button>
+            <button class="filter-button" onclick="filterPosts('food', event)">Food</button>
+            <button class="filter-button" onclick="filterPosts('lifestyle', event)">Lifestyle</button>
+        </div>
+
+        <div class="post-grid" id="blog-posts">
+            <!-- Blog posts will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Static Blog. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Load all blog posts
+        document.addEventListener('DOMContentLoaded', () => {
+            const blogPostsContainer = document.getElementById('blog-posts');
+            blogPosts.forEach(post => {
+                const postCard = createPostCard(post);
+                blogPostsContainer.appendChild(postCard);
+            });
+        });
+    </script>
+</body>
+</html>

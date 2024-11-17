@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Static Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Blog</div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="blog-list.html">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="translucent-text">Your Voice, Your Story, Your Platform.</div>
+            <div class="hero-content">
+                <h1>Discover Amazing Stories</h1>
+                <p>Join our community of writers and readers</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search articles..." id="searchInput">
+                    <button onclick="searchPosts()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="hero-buttons">
+                    <a href="create-post.html" class="cta-button write-btn">
+                        <i class="fas fa-pen"></i> Write Article
+                    </a>
+                    <a href="blog-list.html" class="cta-button explore-btn">
+                        <i class="fas fa-compass"></i> Explore
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="featured-section">
+            <div class="section-header">
+                <h2>Featured Articles</h2>
+                <div class="featured-controls">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="featured-slider" id="featuredSlider">
+                Will be populated by JavaScript -->
+            <!-- </div>
+        </section> -->
+
+        <section class="categories">
+            <h2>Popular Categories</h2>
+            <div class="category-grid">
+                <div class="category-card" onclick="filterByCategory('technology')">
+                    <img src="les-metiers-de-la-techjpeg.jpeg" alt="Technology">
+                    <div class="category-content">
+                        <h3>Technology</h3>
+                        <p>Latest tech trends and insights</p>
+                        <span class="post-count">12 Posts</span>
+                    </div>
+                </div>
+                <div class="category-card" onclick="filterByCategory('lifestyle')">
+                    <img src="lifestyle-products.jpg" alt="Lifestyle">
+                    <div class="category-content">
+                        <h3>Lifestyle</h3>
+                        <p>Living your best life</p>
+                        <span class="post-count">8 Posts</span>
+                    </div>
+                </div>
+                <div class="category-card" onclick="filterByCategory('travel')">
+                    <img src="travel-and-tourism.jpg" alt="Travel">
+                    <div class="category-content">
+                        <h3>Travel</h3>
+                        <p>Explore the world</p>
+                        <span class="post-count">15 Posts</span>
+                    </div>
+                </div>
+                <div class="category-card" onclick="filterByCategory('food')">
+                    <img src="/istockphoto-1829241109-612x612.jpg" alt="Food">
+                    <div class="category-content">
+                        <h3>Food</h3>
+                        <p>Recipes and culinary adventures</p>
+                        <span class="post-count">10 Posts</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Our Blog</h2>
+            <p>This blog is a platform for sharing insights, experiences, and knowledge on various topics. Join us on this journey of discovery and learning.</p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>We'd love to hear from you!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>contact@myblog.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>123 Blog Street, Digital City</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="submitContactForm(event)">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Select Topic</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Technical Support</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Static Blog. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

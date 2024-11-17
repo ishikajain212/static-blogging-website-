@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - My Static Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .blog-post {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .blog-post img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Blog</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog-list.html">Blog</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="blog-post">
+            <h1>Getting Started with Web Development</h1>
+            <p class="post-meta">Posted on May 15, 2023</p>
+            <img src="les-metiers-de-la-techjpeg.jpeg" alt="Web Development">
+            <p>Web development is an exciting field that allows you to create interactive and dynamic websites. In this blog post, we'll cover the basics of HTML, CSS, and JavaScript to help you get started on your web development journey.</p>
+            <h2>HTML: The Structure</h2>
+            <p>HTML (Hypertext Markup Language) is the backbone of any website. It provides the structure and content of your web pages. Here's a simple example:</p>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is my first webpage.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+            <h2>CSS: The Style</h2>
+            <p>CSS (Cascading Style Sheets) is used to style your HTML elements. It controls the layout, colors, and overall appearance of your website. Here's a basic example:</p>
+            <pre><code>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+            </code></pre>
+            <h2>JavaScript: The Interactivity</h2>
+            <p>JavaScript adds interactivity to your website. It allows you to create dynamic content, handle user interactions, and much more. Here's a simple example:</p>
+            <pre><code>
+// Wait for the DOM to load
+document.addEventListener('DOMContentLoaded', () => {
+    // Get the button element
+    const button = document.getElementById('myButton');
+    
+    // Add a click event listener
+    button.addEventListener('click', () => {
+        alert('Hello, World!');
+    });
+});
+            </code></pre>
+            <p>This is just the beginning of your web development journey. As you continue to learn and practice, you'll be able to create more complex and interactive websites. Happy coding!</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Static Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
