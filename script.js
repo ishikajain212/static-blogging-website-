@@ -21,21 +21,21 @@ let blogPosts = [
             <p>Web development is an exciting field that allows you to create interactive and dynamic websites. Here's what you need to know to get started:</p>
             
             <h3>1. HTML - The Building Blocks</h3>
-            <img src="/images/html.jpeg" alt="HTML Code Example" style="width:100%; margin: 1rem 0;">
+            <img src="images/html.jpeg" alt="HTML Code Example" style="width:100%; margin: 1rem 0;">
             <p>HTML provides the structure of your web pages. It's the foundation of web development.</p>
             
             <h3>2. CSS - Making it Beautiful</h3>
-            <img src="/images/css.jpeg" alt="CSS Styling" style="width:100%; margin: 1rem 0;">
+            <img src="images/css.jpeg" alt="CSS Styling" style="width:100%; margin: 1rem 0;">
             <p>CSS helps you style your HTML elements and create responsive layouts.</p>
             
             <h3>3. JavaScript - Adding Interactivity</h3>
-            <img src="/images/javascript.png" alt="JavaScript Code" style="width:100%; margin: 1rem 0;">
+            <img src="images/javascript.png" alt="JavaScript Code" style="width:100%; margin: 1rem 0;">
             <p>JavaScript makes your websites interactive and dynamic.</p>
         `,
         author: "John Doe",
         date: "March 15, 2024",
         category: "technology",
-        image: "/images/les-metiers-de-la-techjpeg.jpeg",
+        image: "images/les-metiers-de-la-techjpeg.jpeg",
         comments: []
     },
     {
@@ -46,25 +46,25 @@ let blogPosts = [
             <p>Planning your next vacation? Here are the top destinations you shouldn't miss in 2024:</p>
             
             <h3>1. Santorini, Greece</h3>
-            <img src="/images/santarini.jpeg" alt="Santorini" style="width:100%; margin: 1rem 0;">
+            <img src="images/santarini.jpeg" alt="Santorini" style="width:100%; margin: 1rem 0;">
             <p>Famous for its stunning sunsets and white-washed buildings.</p>
             
             <h3>2. Bali, Indonesia</h3>
-            <img src="/images/bali.jpeg" alt="Bali" style="width:100%; margin: 1rem 0;">
+            <img src="images/bali.jpeg" alt="Bali" style="width:100%; margin: 1rem 0;">
             <p>A paradise with beautiful beaches and rich culture.</p>
             
             <h3>3. Tokyo, Japan</h3>
-            <img src="/images/tokyo.jpeg" alt="Tokyo" style="width:100%; margin: 1rem 0;">
+            <img src="images/tokyo.jpeg" alt="Tokyo" style="width:100%; margin: 1rem 0;">
             <p>A perfect blend of modern technology and traditional culture.</p>
             
             <h3>4. Machu Picchu, Peru</h3>
-            <img src="/images/macchu pichhu.jpeg" alt="Machu Picchu" style="width:100%; margin: 1rem 0;">
+            <img src="images/macchu pichhu.jpeg" alt="Machu Picchu" style="width:100%; margin: 1rem 0;">
             <p>Ancient Incan city with breathtaking mountain views.</p>
         `,
         author: "Sarah Smith",
         date: "March 14, 2024",
         category: "travel",
-        image: "/images/travel-and-tourism.jpg",
+        image: "images/travel-and-tourism.jpg",
         comments: []
     },
     {
@@ -75,21 +75,21 @@ let blogPosts = [
             <p>Start your day right with these healthy and delicious breakfast recipes:</p>
             
             <h3>1. Overnight Oats with Berries</h3>
-            <img src="/images/overnight.jpeg" alt="Overnight Oats" style="width:100%; margin: 1rem 0;">
+            <img src="images/overnight.jpeg" alt="Overnight Oats" style="width:100%; margin: 1rem 0;">
             <p>A perfect make-ahead breakfast packed with nutrients.</p>
             
             <h3>2. Avocado Toast with Poached Egg</h3>
-            <img src="/images/avocado.jpeg" alt="Avocado Toast" style="width:100%; margin: 1rem 0;">
+            <img src="images/avocado.jpeg" alt="Avocado Toast" style="width:100%; margin: 1rem 0;">
             <p>Creamy avocado and protein-rich eggs on whole grain toast.</p>
             
             <h3>3. Greek Yogurt Parfait</h3>
-            <img src="/images/greek yogurt.jpeg" alt="Yogurt Parfait" style="width:100%; margin: 1rem 0;">
+            <img src="images/greek yogurt.jpeg" alt="Yogurt Parfait" style="width:100%; margin: 1rem 0;">
             <p>Layers of yogurt, granola, and fresh fruits.</p>
         `,
         author: "Mike Johnson",
         date: "March 13, 2024",
         category: "food",
-        image: "/images/healthy-breakfast.jpeg",
+        image: "images/healthy-breakfast.jpeg",
         comments: []
     },{
         id: 'tech-3',
@@ -99,7 +99,7 @@ let blogPosts = [
         author: 'Sarah Johnson',
         date: '2024-02-15',
         category: 'technology',
-        image: '/images/AI.jpeg',
+        image: 'images/AI.jpeg',
         comments: []
     },
     {
@@ -110,7 +110,7 @@ let blogPosts = [
         author: 'Mike Chen',
         date: '2024-02-10',
         category: 'technology',
-        image: '/images/cybersecurity.jpeg',
+        image: 'images/cybersecurity.jpeg',
         comments: []
     },
 
@@ -123,7 +123,7 @@ let blogPosts = [
         author: 'Emma Wilson',
         date: '2024-02-08',
         category: 'travel',
-        image: '/images/south asia.jpeg',
+        image: 'images/south asia.jpeg',
         comments: []
     },
     {
@@ -134,7 +134,7 @@ let blogPosts = [
         author: 'David Miller',
         date: '2024-02-05',
         category: 'travel',
-        image: '/images/europe.jpeg',
+        image: 'images/europe.jpeg',
         comments: []
     },
 
@@ -147,7 +147,7 @@ let blogPosts = [
         author: 'Yuki Tanaka',
         date: '2024-02-12',
         category: 'food',
-        image: '/images/japanese cooking.jpeg',
+        image: 'images/japanese cooking.jpeg',
         comments: []
     },
     {
@@ -158,7 +158,7 @@ let blogPosts = [
         author: 'Maria Garcia',
         date: '2024-02-01',
         category: 'food',
-        image: '/images/meditarrian.jpeg',
+        image: 'images/meditarrian.jpeg',
         comments: []
     },
 
@@ -171,7 +171,7 @@ let blogPosts = [
         author: 'Alex Brown',
         date: '2024-02-14',
         category: 'lifestyle',
-        image: '/images/minimalistic life guid.jpeg',
+        image: 'images/minimalistic life guid.jpeg',
         comments: []
     },
     {
@@ -182,7 +182,7 @@ let blogPosts = [
         author: 'Rachel Lee',
         date: '2024-02-03',
         category: 'lifestyle',
-        image: '/images/morning routine.jpeg',
+        image: 'images/morning routine.jpeg',
         comments: []
     }
 ];
